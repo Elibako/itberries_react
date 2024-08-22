@@ -1,0 +1,122 @@
+/* General Styles to Prevent Overflow */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+/* Filter Navbar */
+.filter-navbar {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 10px; 
+    background-color: rgba(26, 26, 26, 1); 
+    justify-content: center; 
+    position: relative; 
+    box-sizing: border-box; 
+    max-width: 100%; 
+}
+
+/* Add a single line under all links */
+.filter-navbar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    z-index: 1; 
+}
+
+/* Styles for individual links */
+.filter-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff; 
+    padding-bottom: 10px;
+    position: relative; 
+    z-index: 2; 
+}
+
+/* Bright underline when hovered or active */
+.filter-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent; 
+    transition: background-color 0.3s; 
+}
+
+.filter-link:hover::after,
+.filter-link.active::after {
+    background-color: #fff; 
+}
+
+/* Media Queries for Devices with min-width of 769px */
+@media (min-width: 769px) {
+    .filter-navbar {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        gap: 20px; 
+    }
+
+    .filter-link {
+        padding: 10px 20px; 
+    }
+}
+
+/* Portfolio Section */
+#portfolio-section {
+    position: relative;
+    width: 100vw;
+    height: 50vh; 
+    background-image: url('src/assets/image 12.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    align-items: center; 
+    justify-content: center;
+    color: white; 
+    overflow: hidden; /* Prevent background from causing overflow */
+}
+
+#portfolio-section h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 2rem; 
+    margin: 0;
+    padding: 20px; 
+    color: black;
+    border: 5px black solid;
+}
+
+/* Media Queries for Devices with max-width of 768px */
+@media (max-width: 768px) {
+    .filter-navbar {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+    }
+    
+    .filter-link {
+        padding: 10px; 
+    }
+
+    .filter-navbar .filter-link:nth-child(1),
+    .filter-navbar .filter-link:nth-child(2) {
+        order: 1; 
+    }
+
+    .filter-navbar .filter-link:nth-child(3) {
+        order: 2; 
+    }
+}

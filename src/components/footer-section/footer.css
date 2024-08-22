@@ -1,0 +1,46 @@
+.footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Centered text */
+}
+
+.footer-content {
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center content */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem; /* Slightly smaller font size for the paragraph */
+}
+
+.footer-links {
+    margin-top: 10px; /* Space above the links */
+}
+
+.footer-links a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Space between links */
+}
+
+.footer-icons {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center icons horizontally */
+    gap: 20px; /* Space between icons */
+    margin: 20px 0; /* Margin above and below the icons */
+}
+
+.footer-icons img {
+    width: 24px; /* Size of the icons */
+    height: 24px; /* Size of the icons */
+}
+
+.back-anchor-tag {
+    color: white; /* White text color for the link */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure margin is applied correctly */
+    margin: 20px 0; /* Margin above and below the link */
+    font-size: 1rem; /* Font size for the link */
+}

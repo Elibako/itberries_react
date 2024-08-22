@@ -1,0 +1,169 @@
+
+.explore-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.explore-container .line {
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    margin: 0 10px;
+}
+
+.explore-container p {
+    margin: 0;
+    padding: 0 10px;
+    white-space: nowrap;
+    font-size: 1.2em;
+}
+
+.explore-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.explore-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+#About_Me {
+    background: radial-gradient(circle, #B8C4C2, #e0e0e0);
+    padding: 50px;
+    color: black;
+    margin: 0;
+    border-top: 1px solid transparent;
+}
+
+.about-me-header {
+    text-align: center;
+    margin: 0;
+}
+
+.about-header {
+    display: inline-block;
+    border: 5px solid black;
+    padding: 20px;
+    margin: 0 0 30px 0;
+    
+    
+}
+.js, .html5, .sass, .css p {
+    text-align: center;
+}
+
+.react, .figma, .bootstrap, .git p {
+    text-align: center;
+}
+
+.text-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    margin: 100px 0 100px 0 ;
+}
+.exp-img{
+    margin: 50px 0 50px 0;
+}
+.text-use{
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.design-grid, .development-grid, .maintenance-grid {
+    flex: 1 1 48%; 
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    
+  
+}
+.design-grid{
+    background-image: url(src/assets/pen.svg);
+    background-repeat: no-repeat;
+    background-position: 40%;
+}
+.development-grid{
+    background-image: url(src/assets/tool.svg);
+    background-repeat: no-repeat;
+    background-position: 30%;
+}
+
+.maintenance-grid{
+    background-image: url(src/assets/cog.svg);
+    background-repeat: no-repeat;
+    background-position:40%; 
+}
+
+.maintenance-grid {
+    flex: 1 1 100%; 
+}
+@media (max-width:768px) {
+    .explore-container {
+        flex-direction: column; 
+        margin-top: 15px; 
+        margin-bottom: 15px; 
+    }
+
+    .explore-container .line {
+        height: 1px; 
+        width: 30px; 
+        margin: 10px 0; 
+    }
+
+    .explore-container p {
+        font-size: 1em; 
+        margin: 10px 0; 
+    }
+
+    .explore-img {
+        height: auto; 
+        margin: 50px;
+       
+    }
+
+    #About_Me {
+        padding: 30px; 
+    }
+
+    .about-header {
+        border-width: 2px; 
+        padding: 15px; 
+    }
+    .design-grid, .development-grid {
+        flex: 1 1 100%;
+    }
+
+    .imgs-a, .imgs-b {
+        flex-direction: column;
+    }
+    .development-grid{
+        background-image: url(src/assets/tool.svg);
+        background-repeat: no-repeat;
+       background-position: 20px;
+    }
+    .maintenance-grid{
+        background-image: url(src/asssets/cog.svg);
+        background-repeat: no-repeat;
+        background-position:20px; 
+    }
+    .design-grid{
+        background-image: url(src/assets/pen.svg);
+        background-repeat: no-repeat;
+        background-position: 20px;
+    }
+    
+}

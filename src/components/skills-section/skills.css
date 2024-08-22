@@ -1,0 +1,123 @@
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.skills-svg {
+    width: 100%;
+    max-width: 300px; 
+    height: 50vh; 
+}
+
+.skills-svg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
+    margin: 0 auto;
+}
+
+.skills-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.imgs-a, .imgs-b {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.imgs-a > div, .imgs-b > div {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box; 
+}
+
+
+.imgs-a img, .imgs-b img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+
+.container-2{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        
+}
+.learning-grid {
+    padding: 20px;
+    margin: 50px 0 50px 0;
+}
+
+.learning-grid-imgs {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.learning-grid-imgs .nodejs, .mysql, .mongodb, .ts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box; 
+}
+
+.learning-grid-imgs .figma img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}    
+@media (max-width :768px) {
+    .skills-svg{
+        height: 30vh; 
+   }
+   .learning-grid-imgs {
+       flex-direction: column; 
+       align-items: center; 
+   }
+
+   .learning-grid-imgs .figma {
+       width: auto; 
+       margin-bottom: 20px;
+   }
+   #portfolio-section {
+       height: 200px; 
+   }
+
+   #portfolio-section h1 {
+       font-size: 1.5rem; 
+   }
+   .image-grid {
+       flex-direction: column; 
+   }
+
+   .imgs_a, .imgs_b {
+       flex-direction: column; 
+       gap: 15px; 
+   }
+
+   .imgs_a img, .imgs_b img {
+       width: 100%; 
+   }
+
+}
+
+    

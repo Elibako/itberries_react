@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#It-berries {
+    margin: 0;
+    padding: 5px;
+    background-image: url(src/assets/Group18.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+    display: flex;
+}
+
+.header-text h1,
+.header-text p {
+    margin: 0;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+
+.header-text p {
+color: white;
+line-height: 138.7%;
+letter-spacing: 0%;
+margin: 0;
+padding: 10px;
+}
+
+.header-text h1 {
+letter-spacing: 18.54%;
+line-height: auto;
+font-size: 2.5em;
+margin: 0;
+color: white;
+}
+.read-more-container {
+display: flex;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 0;
+}
+.morebtn {
+    display: inline-block; 
+    font-size: large; 
+    border-left: 2px solid #ffffff; 
+    border-right: 2px solid #ffffff; 
+    border-bottom: none; 
+    /* border-radius: 5px;  */
+    padding: 10px 20px; 
+    text-decoration: none; 
+    color: #ffffff; 
+    background-color: transparent; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.morebtn:hover {
+    background-color: #333; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+@media (max-width:768px){ #It-berries {
+    background-image: url(src/assets/Group2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 50px;
+}
+.read-more-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 100%; 
+}
+.header-text h1{
+    text-align: center;
+}
+.header-text p {
+    text-align: center;
+}
+    
+}

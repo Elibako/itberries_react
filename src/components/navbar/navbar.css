@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-content h3 {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Increased padding */
+    background-color: #333;
+    color: #fff;
+    position: relative; /* Ensure dropdown stays within the navbar */
+    margin: 0; /* Remove any margin */
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff; /* Ensures the menu icon is visible on dark background */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+    border-radius: 8px;
+}
+
+.navbar .nav-links li:hover {
+    background-color: #fff;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.navbar .nav-links li a:hover {
+    color: #333;
+    background-color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px; /* Adjusted padding for smaller screens */
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hidden by default */
+        background-color: #333;
+        position: absolute; /* Positioned below the navbar */
+        top: 100%; /* Position directly below the navbar */
+        left: 0;
+        padding: 0; /* Remove any padding */
+        margin: 0; /* Remove any margin */
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .nav-links li a {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+        order: 2; /* Ensures the menu icon is on the right side */
+    }
+
+    /* Show nav-links when menu-toggle is checked */
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 20px; /* Adjusted padding for very small screens */
+    }
+
+    .navbar .logo img {
+        height: 40px;
+    }
+
+    .navbar .nav-links li {
+        margin: 5px 0;
+    }
+
+    .navbar .menu-icon {
+        font-size: 1.5rem;
+    }
+}
